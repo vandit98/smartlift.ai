@@ -6,7 +6,7 @@ function ExerciseCard({exercise}) {
     console.log(exercise)
   return (
     <Link className="exercise-card" to={`/exercise/${exercise.id}`} style={{ textDecoration: 'none' }}>
-    <img src={exercise.gifUrl}/>
+    <img src={exercise.gifUrl} alt="GIF demonstrating a bicep curl exercise"/>
 
     <Stack direction="row">
       <Button sx={{ ml: '21px', color: '#fff', background: '#FFA9A9', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
